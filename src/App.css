@@ -1,38 +1,51 @@
 .App {
+  /* Estilos generales para el contenedor principal */
+}
+
+header {
+  background-color: #06231F;
+  color: #FBFCF2;
+  padding: 10px 20px;
+  max-width: 100%; /* Define el ancho máximo del header */
+  
+}
+
+main {
+  background-color: #FBFCF2;
+  padding: 10px 20px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center; /* Alinea verticalmente los elementos dentro de la barra de navegación */
+  background-color: #A5B7A3;
+  padding: 2px;
+  text-align: center;
+  border-radius: 50px;
+  width: 50%; /* Ancho del contenedor de navegación */
+  margin-left: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-links {
+  list-style-type: none;
+  display: flex; /* Utiliza Flexbox para la disposición horizontal */
+  margin-left: auto; /* Empuja los elementos al extremo derecho */
+  padding: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-links li {
+  margin-right: 10px; /* Espacio entre cada elemento de la navegación */
+}
+
+.nav-links li a {
+  text-decoration: none; /* Quita el subrayado predeterminado de los enlaces */
+  color: #000000; /* Color del texto de los enlaces */
+  margin: 0 10px; /* Espacio entre cada enlace */
+}
+
+.logo {
+  max-width: 150px; /* Ajusta el tamaño máximo del logo según tu diseño */
+  margin-right: auto; /* Empuja el logo hacia la izquierda */
+  margin-left: 50px; /* Espacio izquierdo para separar del borde */
+
 }
